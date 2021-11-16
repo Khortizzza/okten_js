@@ -110,28 +110,28 @@
 
 // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
 // for (let i = 0; i < 100; i++){
-// document.write(`${i}`)
+// document.write(`<p>${i}</p>`)
 //     console.log(i)
 // }
 
 // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
 // for (let i = 0; i < 100; i += 2){
-// document.write(`${i}`)
+// document.write(`<p>${i}</p>`)
 //     console.log(i)
 // }
 
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
 // for (let i = 0; i < 100; i++) {
 //     if (i%2 === 0 && i !== 0 ) {
-//         document.write(`${i}`)
+//         document.write(`<p>${i}</p>`)
 //     console.log(i)
 //     }
 // }
 
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
-// for (let i = 0; i < 100; i++) {
-//     if (i%2 === 1 && i !== 0 ) {
-//         document.write(`${i}`)
-//     console.log(i)
-//     }
-// }
+for (let i = 0; i < 100; i++) {
+    if (i%3 === 0 && i%2 !== 0 ) {
+        document.write(`<p>${i}</p>`)
+    console.log(i)
+    }
+}
