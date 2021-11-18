@@ -67,7 +67,6 @@ function mixArray (arr) {
     document.write(`<ul>`);
     for (const item of arr) {
         document.write(`<li>${item}</li>`);
-
     }
     document.write(`</ul>`)
 }
