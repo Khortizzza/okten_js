@@ -79,7 +79,7 @@
 function summArr(numbers) {
     let result = 0;
     for (const number of numbers) {
-        result = result+number;
+        result = result + number;
     }
     return result;
 }
@@ -87,18 +87,18 @@ function summArr(numbers) {
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 function summArray(numbers) {
     let result = summArr(numbers);
-    return result/numbers.length;
+    return result / numbers.length;
 }
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
-function minMax (num) {
+function minMax(num) {
     let max = num[0];
     let min = num[0];
     for (const numb of num) {
-        if (numb>max) {
-            max=numb;
+        if (numb > max) {
+            max = numb;
         }
-        if (numb<min) {
+        if (numb < min) {
             min = numb;
         }
     }
@@ -108,9 +108,33 @@ function minMax (num) {
 
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+function randNum(arr) {
+    for (let i = 0; i < 10; i++) {
+        arr[i] = Math.round(Math.random() * 100);
+    }
+    return arr;
+
+}
 
 
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
-
+function limNum(arr, limit) {
+    for (let i = 0; i < 10; i++) {
+        arr[i] = Math.round(Math.random() * limit);
+    }
+    return arr;
+}
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+function conversely(arr) {
+    let newArr = [];
+    // for (let i = arr.length - 1; i >= 0; i--) {
+    //     const arrElement = arr[i];
+    //     newArr.push(arrElement)
+    // }
+    for (let i = newArr.length - 1, ri; i >= 0; i--, ri++) {
+        const newArrElement = newArr[i];
+        newArr[ri] = newArr[i];
+    }
+return newArr;
+}
