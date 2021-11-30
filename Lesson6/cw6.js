@@ -2,19 +2,31 @@
 let n1 = 'Harry..Potter'
 let n2 = 'Ron---Whisley'
 let n3 = 'Hermione__Granger'
+let n4 = 'Sirius---__..Black'
 // Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
 // let n1 = 'Harry Potter'
 // let n2 = 'Ron Whisley'
 // let n3 = 'Hermione Granger'
 
 function editName(name) {
-    name.replaceAll('..', ' ');
-    name.replaceAll('---', ' ');
-    name.replaceAll('__', ' ');
+    return name
+        .replaceAll('..', ' ')
+        .replaceAll('---', ' ')
+        .replaceAll('__', ' ')
+        .replaceAll('   ', ' ');
+
 }
 console.log(n1);
 console.log(n2);
 console.log(n3);
+console.log(n4);
+
+// let replaceName = editName(n1);
+// let replaceName = editName(n2);
+// let replaceName = editName(n3);
+let replaceName = editName(n4);
+console.log(replaceName);
+
 
 //     - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
 function randArr(size) {
