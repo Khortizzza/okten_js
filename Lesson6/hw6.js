@@ -39,7 +39,7 @@
 //     let str = 'Каждый охотник желает знать';
 // document.writeln(delete_characters(str, 7)); // Каждый
 
-let str = 'Каждый охотник желает знать';
+// let str = 'Каждый охотник желает знать';
 // function delete_characters (str, length) {
 //     return str.substring(0, length);
 // }
@@ -62,14 +62,14 @@ let str = 'Каждый охотник желает знать';
 
 // - Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
 
-function capitalize(str) {
-    let arr=[];
-    let capStr = str.split(' ')
-    for (let item of capStr){
-                let Strin = item[0].toUpperCase() + item.slice(1);
-                arr.push(Strin);
-            }
-  let newStr=arr.join(' ');
-    return newStr;
-}
-console.log(capitalize(str));
+// function capitalize(str) {
+//     let arr=[];
+//     let capStr = str.split(' ')
+//     for (let item of capStr){
+//                 let Strin = item[0].toUpperCase() + item.slice(1);
+//                 arr.push(Strin);
+//             }
+//   let newStr=arr.join(' ');
+//     return newStr;
+// }
+// console.log(capitalize(str));
