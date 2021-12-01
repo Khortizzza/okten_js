@@ -42,11 +42,16 @@ function randArr(size) {
 // arrayRand.sort((a,b) => a-b);
 // arrayRand.sort((a,b) => b-a);
 
-// - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. відфільтрувати  його за допомоги filter, залишивши тільки парні числа
-arrayRand.filter(value => !(value%2));
 
-// - створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
-arrayRand.map(value => value + '');
+// - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень.
+// відфільтрувати  його за допомоги filter, залишивши тільки парні числа
+// arrayRand.filter(value => !(value%2));
+
+
+// - створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) .
+// за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
+//arrayRand.map(value => value + '');
+
 
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 // let nums = [11,21,3];
@@ -66,13 +71,16 @@ arrayRand.map(value => value + '');
 
 
 // - є масив
-// let coursesAndDurationArray = [
-//     {title: 'JavaScript Complex', monthDuration: 5},
-//     {title: 'Java Complex', monthDuration: 6},
-//     {title: 'Python Complex', monthDuration: 6},
-//     {title: 'QA Complex', monthDuration: 4},
-//     {title: 'FullStack', monthDuration: 7},
-//     {title: 'Frontend', monthDuration: 4}
-// ];
+let coursesAndDurationArray = [
+    {title: 'JavaScript Complex', monthDuration: 5},
+    {title: 'Java Complex', monthDuration: 6},
+    {title: 'Python Complex', monthDuration: 6},
+    {title: 'QA Complex', monthDuration: 4},
+    {title: 'FullStack', monthDuration: 7},
+    {title: 'Frontend', monthDuration: 4}
+];
 // -- відсортувати його за спаданням за monthDuration
+console.log(coursesAndDurationArray.sort((a, b) => a.monthDuration - b.monthDuration));
+
 // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
+console.log(coursesAndDurationArray.filter(value => value.monthDuration > 5));
