@@ -160,20 +160,14 @@ for (const course of coursesArray) {
     let flexStyle = document.createElement('div')
     flexStyle.style.display = 'flex';
 
-
-
     let durationOfTheCourse = document.createElement('div');
     durationOfTheCourse.innerText = `Duration of the course: ${course.monthDuration}   `;
-
 
     let hourDuration = document.createElement('div');
     hourDuration.innerText = `Hour: ${course.hourDuration}`;
 
-
     flexStyle.appendChild(durationOfTheCourse)
     flexStyle.appendChild(hourDuration)
-
-
 
 
     let modulesElement = document.createElement('ul');
@@ -182,8 +176,6 @@ for (const course of coursesArray) {
         module.innerText = moduleItem;
         modulesElement.appendChild(module);
     }
-
-
 
 
     elemCourse.appendChild(title);

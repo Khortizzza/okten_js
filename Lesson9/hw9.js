@@ -50,6 +50,7 @@
 // }
 
 
+
 // - Є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
