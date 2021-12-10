@@ -41,3 +41,32 @@ menu.onclick = function (){
 // - Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
 //     Вывести список комментариев в документ, каждый в своем блоке.
 //     Добавьте каждому комментарию по кнопке для сворачивания его body.
+let comments = [
+    {title : 'lorem', body:'lorem ipsum dolo sit ameti'},
+    {title : 'lorem1', body:'lorem lorem lorem'},
+    {title : 'lorem2', body:'ipsum dolo ipsum dolo ipsum dolo'},
+    {title : 'lorem3', body:'sit sit dolo sit sit'},
+    {title : 'lorem4', body:'ameti ameti ameti ameti ameti'}
+]
+for (const comment of comments) {
+
+let commentDiv = document.createElement('div');
+commentDiv.classList.add('comment');
+
+    let title = document.createElement('h3');
+    title.innerText = comment.title;
+
+let comm = document.createElement('div');
+comm.classList.add('body-commnet')
+comm.innerText = comment.body;
+
+    let btn = document.createElement('button');
+    btn.innerText = "clear comments";
+btn.onclick = function () {
+    comm.classList.toggle('clear-body')
+}
+
+    commentDiv.append(title, comm, btn);
+    document.body.appendChild(commentDiv);
+
+}
